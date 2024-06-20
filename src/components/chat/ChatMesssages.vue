@@ -4,10 +4,9 @@
       <ChatBubble
         v-for="message in messages"
         :key="message.id"
-        :its-mine="message.itsMine"
-        :message="message.message"
-        :image="message.image"
+        v-bind="message"
       />
+     
     </div>
   </div>
 </template>
@@ -15,9 +14,9 @@
 import type { ChatMessage } from '@/interfaces/chat-meesage';
 import ChatBubble from './ChatBubble.vue';
 
-interface Props {
-  messages: ChatMessage[];
-}
+ interface Props {
+  messages : ChatMessage[];
+ }
 
 defineProps<Props>();
 </script>

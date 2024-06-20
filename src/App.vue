@@ -6,5 +6,5 @@
 </template>
 
 <script lang="ts" setup>
-import Indecision from '@/views/Indecision.vue';
+import Indecision from '@/views/IndecisionView.vue';
 </script>
